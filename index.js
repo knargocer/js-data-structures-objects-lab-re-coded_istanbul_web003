@@ -1,11 +1,10 @@
 // Write your solution in this file!
 
-const driver={"key":"value"};
+const driver={"key":"value";
 
 function updateDriverWithKeyAndValue(driver, key, value){
-  let tmpObj = tmpObj.assign({}, driver);
-  tmpObj.key = value;
-  return tmpObj;
+  driver.key = value;
+  return driver;
 }
 
 function destructivelyUpdateDriverWithKeyAndValue(driver, key, value){
