@@ -3,8 +3,10 @@
 const driver={"knar":"value"};
 
 function updateDriverWithKeyAndValue(driver, key, value){
-  driver[key] = value;
-  return driver;
+  let tmp = Object.assign({},driver);
+  
+  tmp[key] = value;
+  return tmp;
 }
 
 function destructivelyUpdateDriverWithKeyAndValue(driver, key, value){
